@@ -1,0 +1,141 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./fonts/digital-7.ttf');
+}
+
+@font-face {
+    font-family: 'digital-clock-font-italic';
+    src: url('./fonts/digital-7\ \(italic\).ttf');
+}
+
+.frame {
+    align-self: center;
+    height: 765px;
+    width: 540px;
+    background-color: #aaa;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 350px);
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 4px 9px 2px black;
+}
+
+.display {
+    background-color: #eee;
+    height: 150px;
+    align-self: stretch;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#operationPreformed {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 100;
+    padding-bottom: 0px;
+    color: black;
+    font-family: 'digital-clock-font-italic';
+    font-size: 40px;
+}
+
+#numberDisplayed {
+    flex: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 100px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: 'digital-clock-font';
+}
+
+.settings {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 24px;
+}
+
+#On-Off {
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: orange;
+    flex: 1;
+}
+
+#On-Off, #AC {
+    margin-right: 16px;
+}
+
+#AC, #Delete {
+    flex: 2;
+}
+
+#AC {
+    background-color: #faa;
+}
+
+#Delete {
+    background-color: #aaf;
+}
+
+.operations {
+    background-color: orange;
+}
+
+.calculator-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#factorial, #exponential, #mod {
+    background-color: rgb(206, 199, 199);
+
+}
+
+.zero {
+    padding-left: 90px;
+    padding-right: 90px;
+    
+}
+
+button {
+    padding: 24px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 22px;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px black;
+}
+
+button:hover {
+     cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 5px #999;
+    transform: translateY(4px);
+}
