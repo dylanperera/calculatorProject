@@ -325,11 +325,6 @@ function operatorsFunctionality(operationId, operationText) {
         numberDisplayed.textContent == "0"
       ) 
       
-      
-      
-      
-      
-      
       {
         operationsPreformed.textContent = "";
         numberDisplayed.textContent = "Error";
