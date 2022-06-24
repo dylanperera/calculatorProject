@@ -1,7 +1,3 @@
-//Bugs:
-//1. Pressing / then * or + produces unexpected results
-//2. When you press a key try making the button on the UI be pressed
-
 const MAX_DIGITS = 10;
 
 const arrayOfOperations = [
