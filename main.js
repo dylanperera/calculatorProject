@@ -407,7 +407,7 @@ function clearDisplay() {
 //Function that calls the helper functions that handle UI and keyboard deleting
 function initializeDelete() {
   setUpKeyboardDelete();
-  deleteLogic();
+  setUpUIDelete();
 }
 
 //Function that sets up the logic to keyboard deleting/backspacing
